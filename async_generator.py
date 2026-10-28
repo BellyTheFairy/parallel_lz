@@ -8,7 +8,7 @@ def producer(box, name):
         item = f"data-{name}-{i}"
         box.put(item)                          
         print(f"[Производитель {name}] положил {item}. В очереди: {box.qsize()}")
-        time.sleep(0.1)                         # задержка в 0.1 сек
+        time.sleep(0.1)                        
 
 
 def consumer(box, name):
